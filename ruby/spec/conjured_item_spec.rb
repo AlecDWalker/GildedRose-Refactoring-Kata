@@ -18,7 +18,7 @@ describe ConjuredItem do
     expect(item.quality).to eq 6
   end
 
-  it 'cannot set a negate quality value' do
+  it 'cannot set a negative quality value' do
     item = ConjuredItem.new('Book', 5, 0)
     item.update_quality
     expect(item.quality).to eq 0

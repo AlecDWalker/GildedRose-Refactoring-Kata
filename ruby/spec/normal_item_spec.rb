@@ -18,7 +18,7 @@ describe NormalItem do
     expect(item.quality).to eq 8
   end
 
-  it 'cannot set a negate quality value' do
+  it 'cannot set a negative quality value' do
     item = NormalItem.new('Book', 5, 0)
     item.update_quality
     expect(item.quality).to eq 0
