@@ -1,15 +1,13 @@
+# frozen_string_literal: true
 
 class GildedRose
-
   def initialize(items)
     @items = items
   end
 
-  def update()
-    @items.each { |item|
-      item.update_quality}
+  def update
+    @items.each(&:update_quality)
   end
-
 end
 
 class Item
@@ -21,7 +19,7 @@ class Item
     @quality = quality
   end
 
-  def to_s()
+  def to_s
     "#{@name}, #{@sell_in}, #{@quality}"
   end
 end
