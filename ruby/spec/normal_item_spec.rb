@@ -1,4 +1,5 @@
 require 'normal_item'
+require 'gilded_rose'
 
 describe NormalItem do
 

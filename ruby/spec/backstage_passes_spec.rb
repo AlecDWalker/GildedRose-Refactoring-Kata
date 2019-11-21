@@ -1,4 +1,5 @@
 require 'backstage_passes'
+require 'gilded_rose'
 
 describe BackstagePasses do
 
@@ -25,5 +26,5 @@ describe BackstagePasses do
     pass.update_quality
     expect(pass.quality).to eq 0
   end
-  
+
 end

@@ -1,4 +1,5 @@
 require 'sulfuras'
+require 'gilded_rose'
 
 describe Sulfuras do
   it 'maintains its quality' do

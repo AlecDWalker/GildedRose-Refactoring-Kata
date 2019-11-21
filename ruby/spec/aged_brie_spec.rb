@@ -1,4 +1,5 @@
 require 'aged_brie'
+require 'gilded_rose'
 
 describe AgedBrie do
   it 'increases in quality and decreses the Sellin value' do
