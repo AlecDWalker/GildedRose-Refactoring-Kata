@@ -3,6 +3,7 @@ require 'gilded_rose'
 class BackstagePasses < Item
 
   def update_quality
+    @quality = 50 if @quality > 50
 
     if @sell_in > 10
       @quality = @quality + 1

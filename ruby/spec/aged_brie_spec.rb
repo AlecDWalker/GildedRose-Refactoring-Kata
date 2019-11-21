@@ -2,7 +2,7 @@ require 'aged_brie'
 require 'gilded_rose'
 
 describe AgedBrie do
-  it 'increases in quality and decreses the Sellin value' do
+  it 'increases in quality and decreses the sell_in value' do
     brie = AgedBrie.new("Aged Brie", 3, 5)
     brie.update_quality
     expect(brie.quality).to eq 6
