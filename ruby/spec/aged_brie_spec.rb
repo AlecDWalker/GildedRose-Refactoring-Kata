@@ -13,4 +13,5 @@ describe AgedBrie do
     brie.update_quality
     expect(brie.quality).to eq 50
   end
+
 end
