@@ -4,7 +4,6 @@ require 'gilded_rose'
 
 class BackstagePasses < Item
   def update_quality
-    @quality = 50 if @quality > 50
     @quality = if @sell_in > 10
                  @quality + 1
                elsif @sell_in > 5 && @sell_in < 11
@@ -15,5 +14,6 @@ class BackstagePasses < Item
                  0
                end
     @sell_in -= 1
+    @quality = 50 if @quality > 50
   end
 end

@@ -4,6 +4,13 @@ require 'backstage_passes'
 require 'gilded_rose'
 
 describe BackstagePasses do
+
+  it 'reduces the sell_in value by 1 when updated' do
+    pass = BackstagePasses.new('Pass', 20, 10)
+    pass.update_quality
+    expect(pass.sell_in).to eq 19
+  end
+
   it 'increases quality at a normal pace with more than 10 days to go' do
     pass = BackstagePasses.new('Pass', 20, 10)
     pass.update_quality
